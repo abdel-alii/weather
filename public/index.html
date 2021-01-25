@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+
+    <!-- Bootstrap CSS -->
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+      integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>current weather</title>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=default"></script>
+    <script
+      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBy3zXyE38-inu6hwCHDTuFAdOA9tVaRl4&callback=initMap&libraries=&v=weekly"
+      defer
+    ></script>
+  </head>
+
+  <body class="container">
+    <header>
+      <div>
+        <h1>
+          Current Weather
+        </h1>
+      </div>
+      <form>
+        <input type="text" placeholder="type city name..." id="cityToSearch" />
+        <button id="submit">submit</button>
+      </form>
+    </header>
+
+    <main class="gallery">
+      <button id="cl">C°</button>
+      <button id="fh">F°</button>
+      <!-- <div id="gif"></div> -->
+      <div id="main">
+        <h2>Weather:</h2>
+      </div>
+      <div id="sys">
+        <h2>Sunrise & Sunset:</h2>
+      </div>
+      <section id="coord">
+        <h2>Map:</h2>
+      </section>
+      <div id="weather">
+        <h2></h2>
+      </div>
+
+      <!-- <div id="clouds">
+          <h2>CLOUDS:</h2>
+        </div>
+        <div id="wind">
+          <h2>WIND:</h2>
+        </div>
+        <div id="rain">
+          <h2>RAIN:</h2>
+        </div> -->
+      <!-- <div id="visibility">
+          <h2>VISIBILTIY:</h2>
+        </div>
+        <div id="dt">
+          <h2>DT:</h2>
+        </div>
+        <div id="timezone">
+          <h2>TIMEZONE:</h2>
+        </div> -->
+      <!-- <div id="id">
+          <h2>ID:</h2>
+        </div>
+        <div id="name">
+          <h2>NAME:</h2>
+        </div>
+        <div id="cod">
+          <h2>COD:</h2>
+        </div>
+        <div id="base">
+          <h2>BASE:</h2>
+        </div> -->
+    </main>
+    <!-- bootstrap modal -->
+
+    <div
+      class="modal fade"
+      id="exampleModal"
+      tabindex="-1"
+      role="dialog"
+      aria-labelledby="exampleModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+            <button
+              type="button"
+              class="close"
+              data-dismiss="modal"
+              aria-label="Close"
+            >
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body"></div>
+        </div>
+      </div>
+    </div>
+    <!-- end of bootstrp modal  -->
+    <script
+      src="https://code.jquery.com/jquery-3.4.1.min.js"
+      integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+      integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+      integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+      crossorigin="anonymous"
+    ></script>
+    <!-- google maps api  -->
+
+    <script src="main.js"></script>
+  </body>
+</html>
